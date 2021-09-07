@@ -69,8 +69,6 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
     return new ResponseEntity<>(apiError, headers, status);
   }
 
-
-
   @Override
   protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(
       HttpRequestMethodNotSupportedException exception, HttpHeaders headers, HttpStatus status,
