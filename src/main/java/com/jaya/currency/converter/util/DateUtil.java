@@ -6,11 +6,7 @@ import java.time.ZoneId;
 /**
  * Date operations for code reuse.
  */
-public final class DateUtil {
-
-  private DateUtil() {
-
-  }
+public record DateUtil() {
 
   public static LocalDateTime now() {
     return LocalDateTime.now(ZoneId.of("UTC"));

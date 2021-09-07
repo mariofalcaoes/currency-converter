@@ -15,7 +15,8 @@
 
 </div>
 
-Application developed with SpringBoot 2.5.4
+Application developed with SpringBoot 2.5.4. If you need to commit, please use
+[GitFlow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow).
 ### Requirements needed to run the application
 - JDK 16
 - Maven 
@@ -40,6 +41,9 @@ Application developed with SpringBoot 2.5.4
   ```
 
 ### Test the conversion of values
+- Sequence Diagram <br>
+  ![img.svg](src/main/resources/converter.svg)
+
 - Run, in the terminal, the command: <br>
 ```bash
 curl --location --request POST 'http://localhost:8888/currency/converter/' \
@@ -66,6 +70,10 @@ curl --location --request POST 'http://localhost:8888/currency/converter/' \
 ```
 
 ### Transaction history
+
+- Sequence Diagram <br>
+  ![img.svg](src/main/resources/historic.svg)
+  
 - Run, in the terminal, the command: <br>
 
 
@@ -119,6 +127,6 @@ curl --location --request GET 'http://localhost:8888/currency/converter/historic
 }
 ```
 
-### Documenting with Swagger
+### Documenting endpoints with Swagger
 - http://localhost:8888/currency/converter/swagger-ui/
-![img.png](img.png)
+![img.png](src/main/resources/swagger.png)
