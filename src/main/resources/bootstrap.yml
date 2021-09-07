@@ -1,0 +1,15 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /currency/converter
+
+spring:
+  application:
+    name: currency-converter
+  output:
+    ansi:
+      enabled: always
+  cloud:
+    config:
+      enabled: false
+      uri: ${CONFIGSERVER_URI:http://0.0.0.0:8888}
