@@ -24,16 +24,16 @@ import lombok.ToString;
 @AllArgsConstructor
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class ConversionRequest {
-  @NotNull(message = "Destine coin should not be null or empty")
-  @NotEmpty
+  @NotNull(message = "Should not be null")
+  @NotEmpty(message = "Should not be empty")
   @Size(min = 3, max = 3)
   private String     destineCoin;
-  @NotNull(message = "Origin coin should not be null or empty")
-  @NotEmpty
-  @Size(min = 3, max = 3)
+  @NotNull(message = "Should not be null")
+  @NotEmpty(message = "Should not be empty")
+  @Size(min = 3, max = 3, message = "The size must be 3")
   private String     originCoin;
   @NotNull(message = "Origin value should not be null or <= 0")
-  @Positive
+  @Positive(message = "Value must be positive")
   private BigDecimal originValue;
   @ApiModelProperty(hidden = true)
   private Long       userId;
