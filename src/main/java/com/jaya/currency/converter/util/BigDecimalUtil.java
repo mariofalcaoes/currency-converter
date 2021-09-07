@@ -6,15 +6,10 @@ import java.math.RoundingMode;
 /**
  * BigDecimal operations for code reuse.
  */
-public class BigDecimalUtil {
-
-  private BigDecimalUtil() {
-
-  }
+public record BigDecimalUtil() {
 
   public static BigDecimal setScale(BigDecimal value, int scale) {
     return value.setScale(scale, RoundingMode.HALF_UP);
   }
-
 
 }

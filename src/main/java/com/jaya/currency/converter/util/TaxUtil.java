@@ -8,11 +8,7 @@ import java.util.Optional;
 /**
  * TaxUtil operations for code reuse.
  */
-public class TaxUtil {
-
-  private TaxUtil() {
-
-  }
+public record TaxUtil() {
 
   /**
    * Check if currency is allowed, and than, return the value.
