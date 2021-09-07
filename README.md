@@ -39,7 +39,7 @@ Application developed with SpringBoot 2.5.4
   {"status":"UP"}
   ```
 
-### Testar a conversão de valores
+### Test the conversion of values
 - Run, in the terminal, the command: <br>
 ```bash
 curl --location --request POST 'http://localhost:8888/currency/converter/' \
