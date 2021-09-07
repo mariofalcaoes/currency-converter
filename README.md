@@ -15,7 +15,8 @@
 
 </div>
 
-Application developed with SpringBoot 2.5.4
+Application developed with SpringBoot 2.5.4. If you need to commit, please use
+[GitFlow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow).
 ### Requirements needed to run the application
 - JDK 16
 - Maven 
