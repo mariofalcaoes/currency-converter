@@ -111,7 +111,6 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
             .description(exception.getMessage())
             .build();
     return dealingWithResponse(apiError, headers, status);
-
   }
 
   @Override
