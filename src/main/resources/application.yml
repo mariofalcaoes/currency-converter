@@ -1,0 +1,38 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:testdb
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: false
+api:
+  exchange:
+    url: http://api.exchangeratesapi.io/v1/latest
+    access_key: ${ACCESS_KEY}
+
+cache:
+  ttl: 5
+
+feign:
+  client:
+    default:
+      connectTimeout: 235000
+      readTimeout: 230000
+      loggerLevel: basic
+  httpclient:
+    maxConnections: 200
+    maxConnectionsPerRoute: 200
+    hystrix:
+      enabled: false
